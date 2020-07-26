@@ -10,7 +10,7 @@ router.get('/:id',function (req, res, next) {
             return res.send(v);
         }
     });
-   return res.send([]); 
+   return res.status(404).send([]); 
 });
 router.get('/active',function (req, res, next) {
     var activeResult = [];
